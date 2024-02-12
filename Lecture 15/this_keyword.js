@@ -25,7 +25,7 @@ const obj = {
 obj.b();
 
 // 5.Important methods on this:
-//sharing method: means if we want to share one object method to another object there is a way to do that using call apply and bind method. By using these method we try to override the value of this that we have used inside a object method. In order to use it for in another object.
+//sharing method: means if we want to share one object method to another object there is a way to do that using call apply and bind method. By using these method we try to override the value of this that we have used inside a object method. In order to use it inside another object.
 
 // let student1 = {
 //   name: "Yash",
