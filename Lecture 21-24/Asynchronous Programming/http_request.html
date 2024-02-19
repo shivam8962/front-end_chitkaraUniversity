@@ -1,0 +1,33 @@
+<!-- 
+sometimes we want to show some data that has been stored in somewhere else into another server. So, in order to get that data we use http request to get
+that data and do something with it. json placeholder show how json data is shown
+in chrome
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP REQUEST</title>
+  </head>
+  <body>
+    <h1>Async Javascript</h1>
+
+    <script>
+      //  to get http request: we need to first create request object.
+      const request = new XMLHttpRequest();
+
+      // then we create a open method which take 2 argument 1st string which tells what type of request we were mking basically and second one is where where we want to make our endpoint request or you can say from where we want to make our request too.
+      request.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
+      //    in order to send this request we use:
+      request.send();
+    </script>
+  </body>
+</html>
+
+<!-- // get http request: -->
+
+const request = new XMLHttpRequest();
+request.open('GET','https://jsonplaceholder.typicode.com/todos/1')
+request.send();
