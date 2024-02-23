@@ -1,8 +1,14 @@
 // setimeout func is used to execute a func after a specified delay
 
+const { log } = require("console");
+
 // Basic structure: setTimeout(function,delay)
 
 // 1.
+
+function hello() {
+  console.log("This is a setTimeOut inside");
+}
 // console.log("Hi");
 
 // setTimeout(function () {
